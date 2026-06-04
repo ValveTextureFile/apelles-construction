@@ -1,0 +1,180 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: rgb(30, 30, 30);
+}
+
+nav {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(226, 154, 42);
+}
+
+#hero {
+  min-height: 75vh;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 60px;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  max-width: 700px;
+}
+
+#hero p {
+  font-size: 1.4rem;
+}
+
+.button, button {
+  background-color: rgb(226, 154, 42);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page {
+  padding: 70px 60px;
+}
+
+.page h1 {
+  font-size: 3rem;
+}
+
+.page p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(245, 245, 245);
+  padding: 30px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: rgb(226, 154, 42);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 130px;
+}
+#reviews {
+  background-color: white;
+  padding: 70px 60px;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 2.5rem;
+}
+
+.review-source {
+  color: gray;
+  margin-bottom: 35px;
+}
+
+#reviews .card {
+  text-align: left;
+}
+
+#reviews .card h3 {
+  color: rgb(226, 154, 42);
+}
+#chatbot {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+#chat-box {
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.bot-message,
+.user-message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+}
+
+.user-message {
+    background-color: #e29a2a;
+    color: white;
+    text-align: right;
+}
+
+.chat-input-area {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 12px;
+}
+
+.chat-input-area button {
+    background-color: #e29a2a;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+}

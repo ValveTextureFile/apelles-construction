@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apelles Construction</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<script>var script = document.createElement("script");script.type = "module";script.src = "https://widgets.revue.us/2.0/rw-widget-masonry.js";document.getElementsByTagName("head")[0].appendChild(script);</script>
+<script src="index.js"></script>
+<body>
+  <nav>
+    <h2>Apelles Construction</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <h1>Building Your Vision Into Reality</h1>
+    <p>Quality construction, remodeling, and renovation services.</p>
+    <a class="button" href="contact.html">Get a Free Estimate</a>
+  </section>
+  <section id="chatbot">
+    <h2>Apelles AI Assistant</h2>
+
+    <div id="chat-box">
+        <div class="bot-message">
+            Hello! I'm Apelles AI. How can I help you today?
+        </div>
+    </div>
+
+    <div class="chat-input-area">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Ask about remodeling, estimates, decks..."
+        >
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</section>
+  <section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="cards">
+    <div data-rw-masonry="51019"></div>
+  </div>
+</section>
+</body>
+</html>
