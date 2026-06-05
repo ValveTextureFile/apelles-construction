@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Apelles Construction</title>
   <link rel="stylesheet" href="index.css">
 </head>
 
-<script>var script = document.createElement("script");script.type = "module";script.src = "https://widgets.revue.us/2.0/rw-widget-masonry.js";document.getElementsByTagName("head")[0].appendChild(script);</script>
+<script>var script = document.createElement("script"); script.type = "module"; script.src = "https://widgets.revue.us/2.0/rw-widget-masonry.js"; document.getElementsByTagName("head")[0].appendChild(script);</script>
 <script src="javascript/index.js"></script>
+<script src="javascript/chatbot.js"></script>
+
 <body>
   <nav>
     <h2>Apelles Construction</h2>
@@ -20,11 +23,17 @@
   </nav>
 
   <section id="hero">
-    <h1>Building Your Vision Into Reality</h1>
-    <p>Quality construction, remodeling, and renovation services.</p>
-    <a class="button" href="contact.html">Get a Free Estimate</a>
+    <div class="hero-content fly-in">
+      <h1>Building <i><u>Your</u></i> Vision Into Reality</h1>
+      <p><i>
+          Professional remodeling, renovation, and construction services
+          built on craftsmanship, communication, and trust.
+        </i>
+      </p>
+      <a class="button" href="contact.html">Request a Free Estimate</a>
+    </div>
   </section>
-  <section id="chatbot">
+  <!-- <section id="chatbot" class="fly-in">
     <h2>Apelles AI Assistant</h2>
 
     <div id="chat-box">
@@ -41,12 +50,15 @@
         >
         <button onclick="sendMessage()">Send</button>
     </div>
-</section>
-  <section id="reviews">
-  <h2>Customer Reviews</h2>
-  <div class="cards">
-    <div data-rw-masonry="51019"></div>
-  </div>
-</section>
+</section> -->
+  <section id="reviews" >
+    <h2 class="fly-in">Customer Reviews</h2>
+
+    <div id="reviews-widget" class="fly-in">
+      <div data-rw-masonry="51019"></div>
+    </div>
+  </section>
+  <script src="javascript/scroll.js"></script>
 </body>
+
 </html>

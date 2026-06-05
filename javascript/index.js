@@ -35,3 +35,4 @@ function handleEstimateButton() {
         alert("Thank you for your interest! Please fill out the form to receive a free estimate.");
     });
 }
+
