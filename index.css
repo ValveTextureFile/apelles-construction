@@ -260,6 +260,13 @@ section>p {
         rgba(226, 154, 42, .5);
 }
 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    gap: 30px;
+}
+
 /* =========================
    CARD TITLES
 ========================= */
@@ -304,6 +311,11 @@ section>p {
 
 .contact-card a:hover {
     opacity: .8;
+}
+
+.disclaimer {
+  color:#979797;
+  font-style: italic;
 }
 
 /* =========================
