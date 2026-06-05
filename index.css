@@ -12,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 25px 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 nav h2 {
@@ -29,10 +30,16 @@ nav a:hover {
   color: rgb(226, 154, 42);
 }
 
+.contact-card a {
+  color: rgb(226, 154, 42);
+  font-style:oblique;
+  text-decoration: none;
+}
+
 #hero {
   min-height: 75vh;
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-              url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+  background: linear-gradient(rgba(114, 79, 4, 0.151), rgba(0, 0, 0, 0)),
+              url("/assets/bg2.png");
   background-size: cover;
   background-position: center;
   color: white;

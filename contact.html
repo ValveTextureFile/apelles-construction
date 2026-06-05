@@ -4,6 +4,7 @@
   <title>Contact | Apelles Construction</title>
   <link rel="stylesheet" href="index.css">
 </head>
+<script src="javascript/contact.js"></script>
 <body>
   <nav>
     <h2>Apelles Construction</h2>
@@ -22,18 +23,12 @@
     <div class="contact-grid">
 
         <div class="contact-card">
-            <h2>Office Location</h2>
+            <h2>Contact Information</h2>
             <p>
-                4 Freeman Street<br>
-                Edison, NJ 08820
+                Nick Giannikouris<br>
+                Phone: <a href="tel:+9174178709">(917) 417-8709</a><br>
+                Email: <a href="mailto:apellescontracting@gmail.com">apellescontracting@gmail.com</a>
             </p>
-            <iframe
-    src="https://www.google.com/maps?q=4+Freeman+Street+Edison+NJ+08820&output=embed"
-    width="100%"
-    height="450"
-    style="border:0;"
-    loading="lazy">
-</iframe>
         </div>
 
         <div class="contact-card">
@@ -57,28 +52,28 @@
 
     <h2>Request an Estimate</h2>
 
-    <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="Project Address">
+    <form action="https://formspree.io/f/mbdelayv" method="POST">
+    <input id="form-name" name="name" type="text" placeholder="Full Name" required>
+    <input id="form-email" name="email" type="email" placeholder="Email Address" required>
+    <input id="form-phone" name="phone" type="tel" placeholder="Phone Number">
+    <input id="form-address" name="address" type="text" placeholder="Project Address">
 
-        <select>
-            <option>Select a Service</option>
-            <option>Kitchen Remodel</option>
-            <option>Bathroom Remodel</option>
-            <option>Basement Finishing</option>
-            <option>Deck Construction</option>
-            <option>Whole Home Renovation</option>
-            <option>Other</option>
-        </select>
+    <select id="form-service" name="service">
+        <option value="">Select a Service</option>
+        <option>Kitchen Remodel</option>
+        <option>Bathroom Remodel</option>
+        <option>Basement Finishing</option>
+        <option>Deck Construction</option>
+        <option>Whole Home Renovation</option>
+        <option>Other (Must specify in description)</option>
+    </select>
 
-        <textarea placeholder="Tell us about your project"></textarea>
+    <textarea id="form-description" name="description" placeholder="Tell us about your project"></textarea>
 
-        <button type="submit" id="estimate-button">
-            Request Free Estimate
-        </button>
-    </form>
+    <button type="submit" id="estimate-button">
+        Request Free Estimate
+    </button>
+</form>
 </section>
 </body>
 </html>
