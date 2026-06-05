@@ -319,6 +319,55 @@ section>p {
 }
 
 /* =========================
+   ABOUT
+========================= */
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-content h1 {
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #d4d4d4;
+    margin-bottom: 25px;
+}
+
+.about-content blockquote {
+    margin-top: 50px;
+    padding: 30px;
+    border-left: 4px solid #e29a2a;
+    background: rgba(255,255,255,0.03);
+
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.about-layout {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-pic img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 24px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* =========================
    FORM
 ========================= */
 
@@ -444,5 +493,17 @@ footer {
 
     #hero h1 {
         font-size: 4rem;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h1 {
+        text-align: center;
+    }
+
+    .about-portrait {
+        text-align: center;
     }
 }
