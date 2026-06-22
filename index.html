@@ -1,64 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <title>Apelles Construction</title>
+        <link rel="stylesheet" href="/index.css" />
+    </head>
 
-<head>
-  <title>Apelles Construction</title>
-  <link rel="stylesheet" href="/index.css">
-</head>
+    <script>
+        var script = document.createElement("script");
+        script.type = "module";
+        script.src = "https://widgets.revue.us/2.0/rw-widget-masonry.js";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+    <script src="/javascript/index.js"></script>
+    <body>
+        <nav>
+            <h2>Apelles Construction</h2>
+            <div>
+                <a href="/index.html">Home</a>
+                <a href="/pages/services/">Services</a>
+                <a href="/pages/projects/">Projects</a>
+                <a href="/pages/about/">About</a>
+                <a href="/pages/contact/">Contact</a>
+            </div>
+        </nav>
 
-<script>var script = document.createElement("script"); script.type = "module"; script.src = "https://widgets.revue.us/2.0/rw-widget-masonry.js"; document.getElementsByTagName("head")[0].appendChild(script);</script>
-<script src="/javascript/index.js"></script>
-<script src="/javascript/chatbot.js"></script>
+        <section id="hero">
+            <div class="hero-content fly-in">
+                <h1>
+                    Building <i><u>Your</u></i> Vision Into Reality
+                </h1>
+                <p>
+                    <i>
+                        Professional remodeling, renovation, and construction
+                        services built on craftsmanship, communication, and
+                        trust.
+                    </i>
+                </p>
+                <a class="button" href="/pages/contact/"
+                    >Request a Free Estimate</a
+                >
+            </div>
+        </section>
+        <section id="reviews">
+            <h2 class="fly-in">Customer Reviews</h2>
 
-<body>
-  <nav>
-    <h2>Apelles Construction</h2>
-    <div>
-            <a href="/index.html">Home</a>
-            <a href="/pages/services/">Services</a>
-            <a href="/pages/projects/">Projects</a>
-            <a href="/pages/about/">About</a>
-            <a href="/pages/contact/">Contact</a>
-        </div>
-  </nav>
-
-  <section id="hero">
-    <div class="hero-content fly-in">
-      <h1>Building <i><u>Your</u></i> Vision Into Reality</h1>
-      <p><i>
-          Professional remodeling, renovation, and construction services
-          built on craftsmanship, communication, and trust.
-        </i>
-      </p>
-      <a class="button" href="/pages/contact/">Request a Free Estimate</a>
-    </div>
-  </section>
-  <!-- <section id="chatbot" class="fly-in">
-    <h2>Apelles AI Assistant</h2>
-
-    <div id="chat-box">
-        <div class="bot-message">
-            Hello! I'm Apelles AI. How can I help you today?
-        </div>
-    </div>
-
-    <div class="chat-input-area">
-        <input
-            type="text"
-            id="user-input"
-            placeholder="Ask about remodeling, estimates, decks..."
-        >
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</section> -->
-  <section id="reviews" >
-    <h2 class="fly-in">Customer Reviews</h2>
-
-    <div id="reviews-widget">
-      <div data-rw-masonry="51019"></div>
-    </div>
-  </section>
-  <script src="/javascript/scroll.js"></script>
-</body>
-
+            <div id="reviews-widget">
+                <div data-rw-masonry="51019"></div>
+            </div>
+        </section>
+        <script src="/javascript/scroll.js"></script>
+    </body>
 </html>

@@ -1,42 +1,96 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-  <title>Projects | Apelles Construction</title>
-  <link rel="stylesheet" href="/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Apelles Construction</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
+
 <body>
-  <nav>
-    <h2><a href="/index.html">Apelles Construction</a></h2>
-    <div>
-            <a href="/index.html">Home</a>
+    <nav>
+        <h2><a href="/">Apelles Construction</a></h2>
+        <div>
+            <a href="/">Home</a>
             <a href="/pages/services/">Services</a>
             <a href="/pages/projects/">Projects</a>
             <a href="/pages/about/">About</a>
             <a href="/pages/contact/">Contact</a>
         </div>
-  </nav>
+    </nav>
 
-  <section class="page">
-    <h1>Recent Projects</h1>
+    <section class="page projects-page">
+        <h1>Before & After Projects</h1>
+        <p class="page-intro">
+            See how Apelles Construction transforms spaces with quality craftsmanship,
+            clean finishes, and attention to detail.
+        </p>
 
-    <div class="cards">
-      <div class="card fly-in">
-        <h3>Kitchen Remodel</h3>
-        <p>Modern cabinets, new countertops, flooring, and lighting.</p>
-      </div>
+        <div class="project-slider fly-in">
 
-      <div class="card fly-in">
-        <h3>Bathroom Renovation</h3>
-        <p>Updated tile, fixtures, vanity, and shower installation.</p>
-      </div>
+            <div class="project-slide active">
+                <h2>Basement Construction</h2>
+                <div class="before-after">
+                    <div>
+                        <span>Before</span>
+                        <img src="/assets/projects/basement/before.jpg" alt="Kitchen before remodel">
+                    </div>
 
-      <div class="card fly-in">
-        <h3>Outdoor Deck</h3>
-        <p>Custom deck built for outdoor living and entertainment.</p>
-      </div>
-    </div>
-  </section>
-<script src="/javascript/scroll.js"></script>
+                    <div>
+                        <span>After</span>
+                        <img src="/assets/projects/basement/after.jpg" alt="Kitchen after remodel">
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-slide">
+                <h2>Bathroom Renovation</h2>
+
+                <div class="before-after">
+                    <div>
+                        <span>Before</span>
+                        <img src="/assets/projects/bathroom/before.jpg" alt="Bathroom before renovation">
+                    </div>
+
+                    <div>
+                        <span>After</span>
+                        <img src="/assets/projects/bathroom/after.jpg" alt="Bathroom after renovation">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-slide">
+                <h2>Deck Construction</h2>
+
+                <div class="before-after">
+                    <div>
+                        <span>Before</span>
+                        <img src="/assets/projects/deck/before.png" alt="Deck before construction">
+                    </div>
+
+                    <div>
+                        <span>After</span>
+                        <img src="/assets/projects/deck/after.png" alt="Deck after construction">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <button onclick="previousProject()"><strong>&larr;</strong></button>
+                <button onclick="nextProject()"><strong>&rarr;</strong></button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/javascript/projects.js"></script>
+    <script src="/javascript/scroll.js"></script>
 </body>
+
 </html>
