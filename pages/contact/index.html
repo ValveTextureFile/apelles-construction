@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Apelles Construction</title>
   <link rel="stylesheet" href="/index.css">
 </head>
-<script src="/javascript/contact.js"></script>
 <body>
   <nav>
     <h2><a href="/index.html">Apelles Construction</a></h2>
@@ -49,35 +50,32 @@
         </div>
 
     </div>
-<br>
-<br>
-<br>
-    <center class="fly-in">
+    <div class="estimate-section fly-in">
         <h2>Request an Estimate</h2>
         <p class="disclaimer">If you are told that you are unable to submit an estimate from this form, please contact us directly via email.</p>
-    <form action="https://formspree.io/f/mbdelayv" method="POST">
-    <input id="form-name" name="name" type="text" placeholder="Full Name" required>
-    <input id="form-email" name="email" type="email" placeholder="Email Address" required>
-    <input id="form-phone" name="phone" type="tel" placeholder="Phone Number">
-    <input id="form-address" name="address" type="text" placeholder="Project Address">
+        <form action="https://formspree.io/f/mbdelayv" method="POST">
+            <input id="form-name" name="name" type="text" placeholder="Full Name" required>
+            <input id="form-email" name="email" type="email" placeholder="Email Address" required>
+            <input id="form-phone" name="phone" type="tel" placeholder="Phone Number">
+            <input id="form-address" name="address" type="text" placeholder="Project Address">
 
-    <select id="form-service" name="service">
-        <option value="">Select a Service</option>
-        <option>Kitchen Remodel</option>
-        <option>Bathroom Remodel</option>
-        <option>Basement Finishing</option>
-        <option>Deck Construction</option>
-        <option>Whole Home Renovation</option>
-        <option>Other (Must specify in description)</option>
-    </select>
+            <select id="form-service" name="service">
+                <option value="">Select a Service</option>
+                <option>Kitchen Remodel</option>
+                <option>Bathroom Remodel</option>
+                <option>Basement Finishing</option>
+                <option>Deck Construction</option>
+                <option>Whole Home Renovation</option>
+                <option>Other (Must specify in description)</option>
+            </select>
 
-    <textarea id="form-description" name="description" placeholder="Tell us about your project"></textarea>
+            <textarea id="form-description" name="description" placeholder="Tell us about your project"></textarea>
 
-    <button type="submit" id="estimate-button">
-        Request Free Estimate
-    </button>
-    </center>
-</form>
+            <button type="submit" id="estimate-button">
+                Request Free Estimate
+            </button>
+        </form>
+    </div>
 </section>
 <script src="/javascript/scroll.js"></script>
 </body>

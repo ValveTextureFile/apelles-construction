@@ -84,7 +84,7 @@ nav a:hover::after {
 
 #hero h1 {
     font-size: clamp(4rem, 8vw, 7rem);
-    line-height: .95;
+    line-height: 0.95;
     letter-spacing: -4px;
     margin-bottom: 25px;
 }
@@ -223,7 +223,7 @@ section hr {
 }
 
 .contact-card a:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .disclaimer {
